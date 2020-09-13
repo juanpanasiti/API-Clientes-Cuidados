@@ -1,15 +1,7 @@
 import {Router} from 'express'
-import pkg from '../../package.json'
-
+import * as indexController from '../controllers/index.controller'
 const router = Router()
 
-router.get('/about', (req,res) => {
-    res.json({
-        name: pkg.name,
-        author: pkg.author,
-        description: pkg.description,
-        version: pkg.version
-    })
-})
+router.get('/about', indexController.getAboutInfo)
 
 export default router
