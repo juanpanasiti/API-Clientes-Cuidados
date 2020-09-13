@@ -1,0 +1,30 @@
+{
+  "name": "api-clientes-cuidados",
+  "version": "0.0.1",
+  "description": "API desarrollada en Node.JS para brindar un servidor web con información de precios y productos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node build/index.js",
+    "build": "babel src --out-dir build"
+  },
+  "author": "Juan Marcelo Panasiti",
+  "license": "Beerware",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "dotenv": "^8.2.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
+  }
+}
