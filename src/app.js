@@ -9,6 +9,7 @@ import productsRoutes from './routes/products.routes'
 //inits
 const app = express()
 
+app.use(express.json())
 app.use(morgan('dev'))
 
 app.use(indexRoutes)
